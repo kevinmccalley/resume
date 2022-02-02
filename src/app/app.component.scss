@@ -1,0 +1,22 @@
+:host ::ng-deep body * {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+}
+
+:host ::ng-deep .mat-toolbar.mat-primary {
+    background:#4B6973 !important;
+}
+
+:host ::ng-deep a.page-link {
+    color:#F73859 !important;
+    text-decoration:none !important;
+    line-height:26px;
+}
+:host ::ng-deep a.page-link:hover {
+    opacity:.5 !important;
+}
+
+:host ::ng-deep .inner-bot-pad {
+    margin-bottom:4px !important;
+    border-bottom: 1px dashed #F73859 !important;
+    width:max-content;
+}
