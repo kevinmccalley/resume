@@ -29,3 +29,9 @@ h2 {
 .mat-drawer {
     background-color: #E8F0EC;
 }
+ul {
+    padding-inline-start:20px;
+}
+.mat-toolbar-row, .mat-toolbar-single-row {
+    padding:0 7px !important;
+}
