@@ -7,6 +7,7 @@ import { HighlightsComponent } from './highlights/highlights.component';
 import { HistoryComponent } from './history/history.component';
 import { OverviewComponent } from './overview/overview.component';
 import { StrengthsComponent } from './strengths/strengths.component';
+import { AccessibilityComponent } from './accessibility/accessibility.component';
 
 const routes: Routes = [
   { path: '', component: OverviewComponent},
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'highlights', component: HighlightsComponent},
   { path: 'history', component: HistoryComponent},
   { path: 'overview', component: OverviewComponent},
-  { path: 'strengths', component: StrengthsComponent}
+  { path: 'strengths', component: StrengthsComponent},
+  { path: 'accessibility', component: AccessibilityComponent}
 ];
 
 @NgModule({
