@@ -1,12 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family:  Cambria, Georgia, serif; } //Cambria, Georgia, serif;
+body { margin: 0; font-family:  proxima-nova, sans-serif; } //Cambria, Georgia, serif;
 .Pad {padding: 16px; font-size:18px;}
 div {
     line-height:26px;
 }
-h2, .legend-container i {color:#F73859;}
+h2, .legend-container i {color:#2079c7;} //pink = #F73859
 h2, .legend-container {
     display:block;
 }
@@ -27,7 +27,7 @@ h2 {
     margin-bottom:27px;
 }
 .mat-drawer {
-    background-color: #E8F0EC;
+    background-color: #f8f8f8;
 }
 ul {
     padding-inline-start:20px;

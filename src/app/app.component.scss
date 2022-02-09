@@ -3,11 +3,11 @@
 }
 
 :host ::ng-deep .mat-toolbar.mat-primary {
-    background:#4B6973 !important;
+    background:#fafafa !important;
 }
 
 :host ::ng-deep a.page-link {
-    color:#F73859 !important;
+    color:#2079c7 !important; //pink = #F73859
     text-decoration:none !important;
     line-height:26px;
 }
@@ -17,6 +17,6 @@
 
 :host ::ng-deep .inner-bot-pad {
     margin-bottom:4px !important;
-    border-bottom: 1px dashed #F73859 !important;
+    border-bottom: 1px dashed #2079c7 !important; //pink = #F73859
     width:max-content;
 }
