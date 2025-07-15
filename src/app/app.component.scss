@@ -7,11 +7,7 @@
 }
 
 :host ::ng-deep a.page-link {
-<<<<<<< HEAD
     color:#1c6eb5 !important; //pink = #F73859
-=======
-    color:#1665AA !important; //pink = #F73859
->>>>>>> master
     text-decoration:none !important;
     line-height:26px;
 }
@@ -21,11 +17,7 @@
 
 :host ::ng-deep .inner-bot-pad {
     margin-bottom:4px !important;
-<<<<<<< HEAD
     border-bottom: 1px dashed #1c6eb5 !important; //pink = #F73859
-=======
-    border-bottom: 1px dashed #1665AA !important; //pink = #F73859
->>>>>>> master
     width:max-content;
 }
 
