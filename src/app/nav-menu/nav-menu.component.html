@@ -4,14 +4,54 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
     <mat-nav-list>
-      <a mat-list-item href="/overview"><i class="material-icons-outlined">filter_vintage</i> Overview</a>
-      <a mat-list-item href="/highlights"><i class="material-icons-outlined">gpp_good</i> Qualification Highlights</a>
-      <a mat-list-item href="/experience"><i class="material-icons-outlined">foundation</i> Recent Professional Experience</a>
-      <a mat-list-item href="/history"><i class="material-icons-outlined">history</i> Earlier Career History</a>
-      <a mat-list-item href="/education"><i class="material-icons-outlined">school</i> Education</a>
-      <a mat-list-item href="/strengths"><i class="material-icons-outlined">center_focus_strong</i> Key Strengths</a>
-      <a mat-list-item href="/accessibility"><i class="material-icons-outlined">accessibility</i> Accessibility</a>
-      <a mat-list-item href="/contact"><i class="material-icons-outlined">contact_page</i> Contact</a>
+      <a mat-list-item 
+         [routerLink]="['/overview']" 
+         routerLinkActive="active-link" 
+         [routerLinkActiveOptions]="{ exact: true }">
+        <i class="material-icons-outlined">filter_vintage</i> Overview
+      </a>
+      <a mat-list-item 
+         [routerLink]="['/highlights']" 
+         routerLinkActive="active-link" 
+         [routerLinkActiveOptions]="{ exact: true }">
+        <i class="material-icons-outlined">gpp_good</i> Qualification Highlights
+      </a>
+      <a mat-list-item 
+         [routerLink]="['/experience']" 
+         routerLinkActive="active-link" 
+         [routerLinkActiveOptions]="{ exact: true }">
+        <i class="material-icons-outlined">foundation</i> Recent Professional Experience
+      </a>
+      <a mat-list-item 
+         [routerLink]="['/history']" 
+         routerLinkActive="active-link" 
+         [routerLinkActiveOptions]="{ exact: true }">
+        <i class="material-icons-outlined">history</i> Earlier Career History
+      </a>
+      <a mat-list-item 
+         [routerLink]="['/education']" 
+         routerLinkActive="active-link" 
+         [routerLinkActiveOptions]="{ exact: true }">
+        <i class="material-icons-outlined">school</i> Education
+      </a>
+      <a mat-list-item 
+         [routerLink]="['/strengths']" 
+         routerLinkActive="active-link" 
+         [routerLinkActiveOptions]="{ exact: true }">
+        <i class="material-icons-outlined">center_focus_strong</i> Key Strengths
+      </a>
+      <a mat-list-item 
+         [routerLink]="['/accessibility']" 
+         routerLinkActive="active-link" 
+         [routerLinkActiveOptions]="{ exact: true }">
+        <i class="material-icons-outlined">accessibility</i> Accessibility
+      </a>
+      <a mat-list-item 
+         [routerLink]="['/contact']" 
+         routerLinkActive="active-link" 
+         [routerLinkActiveOptions]="{ exact: true }">
+        <i class="material-icons-outlined">contact_page</i> Contact
+      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -23,7 +63,7 @@
         (click)="drawer.toggle()"
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">
-          <i class="material-icon" style="font-style:normal;">menu</i>
+          <i class="material-icons" style="font-style:normal;">menu</i>
         </mat-icon>
       </button>
       <span class="res-header">Resum&#233;: Kevin McCalley</span>
