@@ -31,10 +31,10 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/doom2022.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "baseHref": "/resume/"
           },
           "configurations": {
             "production": {
@@ -100,7 +100,6 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/doom-junior.css",
               "src/styles.scss"
             ],
             "scripts": []

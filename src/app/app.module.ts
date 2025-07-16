@@ -21,6 +21,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { AccessibilityComponent } from './accessibility/accessibility.component';
 
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,10 +48,10 @@ import { AccessibilityComponent } from './accessibility/accessibility.component'
     MatIconModule,
     MatListModule
   ],
-  providers: [Title],
+  providers: [
+    Title,
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
+  ],
   bootstrap: [AppComponent]
 })
-
 export class AppModule { }
-
-
