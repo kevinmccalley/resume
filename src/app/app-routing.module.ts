@@ -10,19 +10,19 @@ import { StrengthsComponent } from './strengths/strengths.component';
 import { AccessibilityComponent } from './accessibility/accessibility.component';
 
 const routes: Routes = [
-  { path: '', component: OverviewComponent},
-  { path: 'contact', component: ContactComponent},
-  { path: 'education', component: EducationComponent},
-  { path: 'experience', component: ExperienceComponent},
-  { path: 'highlights', component: HighlightsComponent},
-  { path: 'history', component: HistoryComponent},
-  { path: 'overview', component: OverviewComponent},
-  { path: 'strengths', component: StrengthsComponent},
-  { path: 'accessibility', component: AccessibilityComponent}
+  { path: '', component: OverviewComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'education', component: EducationComponent },
+  { path: 'experience', component: ExperienceComponent },
+  { path: 'highlights', component: HighlightsComponent },
+  { path: 'history', component: HistoryComponent },
+  { path: 'overview', component: OverviewComponent },
+  { path: 'strengths', component: StrengthsComponent },
+  { path: 'accessibility', component: AccessibilityComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })], // <-- Hash routing enabled
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
