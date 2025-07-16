@@ -4,32 +4,32 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
     <mat-nav-list>
-      <span style="color: red; font-weight: bold;">NAV TEST CHANGE</span>
-      <a href="https://kevinmccalley.github.io/resume/#/overview">
-        <i class="material-icons-outlined">filter_vintage</i> Overview
-      </a>
-      <a href="https://kevinmccalley.github.io/resume/#/highlights">
-        <i class="material-icons-outlined">gpp_good</i> Qualification Highlights
-      </a>
-      <a href="https://kevinmccalley.github.io/resume/#/experience">
-        <i class="material-icons-outlined">foundation</i> Recent Professional Experience
-      </a>
-      <a href="https://kevinmccalley.github.io/resume/#/history">
-        <i class="material-icons-outlined">history</i> Earlier Career History
-      </a>
-      <a href="https://kevinmccalley.github.io/resume/#/education">
-        <i class="material-icons-outlined">school</i> Education
-      </a>
-      <a href="https://kevinmccalley.github.io/resume/#/strengths">
-        <i class="material-icons-outlined">center_focus_strong</i> Key Strengths
-      </a>
-      <a href="https://kevinmccalley.github.io/resume/#/accessibility">
-        <i class="material-icons-outlined">accessibility</i> Accessibility
-      </a>
-      <a href="https://kevinmccalley.github.io/resume/#/contact">
-        <i class="material-icons-outlined">contact_page</i> Contact
-      </a>
-    </mat-nav-list>
+  <a mat-list-item routerLink="/overview" routerLinkActive="active">
+    <i class="material-icons-outlined">filter_vintage</i> Overview
+  </a>
+  <a mat-list-item routerLink="/highlights" routerLinkActive="active">
+    <i class="material-icons-outlined">gpp_good</i> Qualification Highlights
+  </a>
+  <a mat-list-item routerLink="/experience" routerLinkActive="active">
+    <i class="material-icons-outlined">foundation</i> Recent Professional Experience
+  </a>
+  <a mat-list-item routerLink="/history" routerLinkActive="active"> 
+    <i class="material-icons-outlined">history</i> Earlier Career History
+  </a>
+  <a mat-list-item routerLink="/education" routerLinkActive="active">
+    <i class="material-icons-outlined">school</i> Education
+  </a>
+  <a mat-list-item routerLink="/strengths" routerLinkActive="active">
+    <i class="material-icons-outlined">center_focus_strong</i> Key Strengths
+  </a>
+  <a mat-list-item routerLink="/accessibility" routerLinkActive="active">
+    <i class="material-icons-outlined">accessibility</i> Accessibility
+  </a>
+  <a mat-list-item routerLink="/contact" routerLinkActive="active">
+    <i class="material-icons-outlined">contact_page</i> Contact
+  </a>
+</mat-nav-list>
+
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
