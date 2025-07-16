@@ -1,0 +1,30 @@
+:host ::ng-deep body * {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+}
+
+:host ::ng-deep .mat-toolbar.mat-primary {
+    background:#fafafa !important;
+}
+
+:host ::ng-deep a.page-link {
+    color:#1c6eb5 !important; //pink = #F73859
+    text-decoration:none !important;
+    line-height:26px;
+}
+:host ::ng-deep a.page-link:hover {
+    opacity:.5 !important;
+}
+
+:host ::ng-deep .inner-bot-pad {
+    margin-bottom:4px !important;
+    border-bottom: 1px dashed #1c6eb5 !important; //pink = #F73859
+    width:max-content;
+}
+
+:host ::ng-deep a.link {
+    margin-bottom:0px !important;
+    border-bottom: 1px dashed #1665AA !important; //pink = #F73859
+    width:max-content;
+    text-decoration: none;
+    color:#1665AA;
+}

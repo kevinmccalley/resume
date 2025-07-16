@@ -1,0 +1,28 @@
+table {
+    padding: 0px;
+    margin:0px;
+    width:100%;
+    border:.5px solid #eeeeee;
+}
+td {
+    border:.5px solid #eeeeee;
+    margin:0px;
+    padding:15px;
+    background-color:#ffffff;
+}
+tr td:first-child {
+    width:250px;
+    background-color:#ffffff;
+}
+table, .tl {
+    border-top-left-radius: 15px;
+}
+table, .tr {
+    border-top-right-radius: 15px;
+}
+table, .bl {
+    border-bottom-left-radius:15px;
+}
+table, .br {
+    border-bottom-right-radius: 15px;
+}
